@@ -21,48 +21,25 @@
     <h1 class="text-center">git学</h1> 
 </div>
 
- 
- <table id="table1" class="display">
-    <thead>
-        <tr>
-        	<th>ip地址</th>
-            <th>mac地址</th>
-            <th>首次扫描时间</th>
-            <th>末次扫描时间</th>
-        </tr>
-    </thead>
-    <tbody>
-    	<tr>
-        	<td>211.65.196.13</td>
-            <td>90:78:41:42:fa:09</td>
-            <td>2020-01-02 11:31:12</td>
-            <td>2020-01-19 16:51:12</td>
-        </tr>
-    </tbody>
-</table>
 
  <table id="table2" class="display">
     <thead>
         <tr>
-        	<th>ip地址</th>
-            <th>mac地址</th>
-            <th>首次扫描时间</th>
-            <th>末次扫描时间</th>
+        	<th>命令</th>
+            <th>描述</th>
         </tr>
     </thead>
     <tbody>
     	<tr>
-        	<td>211.65.196.13</td>
-            <td>90:78:41:42:fa:09</td>
-            <td>2020-01-02 11:31:12</td>
-            <td>2020-01-19 16:51:12</td>
+        	<td>git add <filename></td>
+            <td>添加文件到暂存区</td>
+        
         </tr>
     </tbody>
 </table>
 <script type="text/javascript ">
 <!--第三步：初始化Datatables-->
 $(document).ready( function () {
-    $('#table1').DataTable();
 	$('#table2').DataTable();
 } );
 </script>
