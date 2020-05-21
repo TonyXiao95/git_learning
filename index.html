@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>活跃设备详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset=utf-8 ">
+    <!-- 引入 Bootstrap -->
+    
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+ 
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+</head>
+ <body>
+ 
+ <div class="row" >   
+    <h1 class="text-center">git学</h1> 
+</div>
+
+ 
+ <table id="table1" class="display">
+    <thead>
+        <tr>
+        	<th>ip地址</th>
+            <th>mac地址</th>
+            <th>首次扫描时间</th>
+            <th>末次扫描时间</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<tr>
+        	<td>211.65.196.13</td>
+            <td>90:78:41:42:fa:09</td>
+            <td>2020-01-02 11:31:12</td>
+            <td>2020-01-19 16:51:12</td>
+        </tr>
+    </tbody>
+</table>
+
+ <table id="table2" class="display">
+    <thead>
+        <tr>
+        	<th>ip地址</th>
+            <th>mac地址</th>
+            <th>首次扫描时间</th>
+            <th>末次扫描时间</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<tr>
+        	<td>211.65.196.13</td>
+            <td>90:78:41:42:fa:09</td>
+            <td>2020-01-02 11:31:12</td>
+            <td>2020-01-19 16:51:12</td>
+        </tr>
+    </tbody>
+</table>
+<script type="text/javascript ">
+<!--第三步：初始化Datatables-->
+$(document).ready( function () {
+    $('#table1').DataTable();
+	$('#table2').DataTable();
+} );
+</script>
+ </body>
+</html>
